@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AgriConnect Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Farmer Dashboard</h2>
+  <nav>
+    <button onclick="showTab('upload')">Upload Product</button>
+    <button onclick="showTab('wallet')">Wallet</button>
+    <button onclick="showTab('sales')">Sales</button>
+    <button onclick="showTab('subscriptions')">Subscriptions</button>
+    <button onclick="showTab('ai')">AI Analysis</button>
+  </nav>
 
+  <section id="upload" class="tab">
+    <h3>Upload Product</h3>
+    <input type="text" placeholder="Product Name" />
+    <input type="text" placeholder="Quantity and Amount" />
+    <textarea placeholder="Description"></textarea>
+    <input type="text" placeholder="Price" />
+    <input type="file" />
+    <input type="text" placeholder="Location" />
+    <select>
+      <option>Available</option>
+      <option>Unavailable</option>
+    </select>
+  </section>
+
+  <section id="wallet" class="tab">
+    <h3>Wallet</h3>
+    <p>Transaction Records</p>
+    <p>Payments</p>
+    <p>Withdrawals</p>
+    <p>Balance</p>
+  </section>
+
+  <section id="sales" class="tab">
+    <h3>Sales</h3>
+    <p>Products Sold</p>
+    <p>Stock Remaining</p>
+    <p>Sales Records</p>
+  </section>
+
+  <section id="subscriptions" class="tab">
+    <h3>Subscriptions</h3>
+    <p>Package A - Basic</p>
+    <p>Package B - Premium</p>
+  </section>
+
+  <section id="ai" class="tab">
+    <h3>AI Analysis (Premium)</h3>
+    <p>Market Trends</p>
+    <p>Recommended Crops</p>
+    <p>Spending Advice</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
